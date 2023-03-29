@@ -1,0 +1,16 @@
+<h2>Lista de tareas (Semana 11)</h2>
+
+<!--Forms para que el enter también dispare el evento-->
+<form (submit)="filtrar()">
+    <!--Property binding-->
+    <input type="text" placeholder="Buscar..." [(ngModel)] = "buscar">
+    <button (click) = "filtrar()">Buscar</button>
+</form>
+
+
+<!--Lista que se consigue desde el componente y del environment -->
+<ul>
+    <li *ngFor="let item of tareasFiltradas">
+        {{item.title}}
+    </li>
+</ul>

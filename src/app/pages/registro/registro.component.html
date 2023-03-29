@@ -1,0 +1,29 @@
+<h2>Registro (Semana 11)</h2>
+
+<div class="formulario">
+    <form [formGroup] = "formRegistro">
+        <div>
+            <p>Nombre:</p>
+            <input type="text" formControlName = "nombre">
+        </div>
+        <div>
+            <p>Correo:</p>
+            <input type="text" formControlName = "correo">
+        </div>
+        <div>
+            <p>Contraseña:</p>
+            <input type="text" formControlName = "contra">
+        </div>
+        <div>
+            <p>Confirmar contraseña:</p>
+            <input type="text" formControlName = "confirmar">
+        </div>
+        <div>
+            <br />
+            <input type="checkbox" formControlName = "aceptar"> Acepto los términos y condiciones
+        </div>
+        <br />
+        <button [disabled] = "formRegistro.invalid">Registrar usuario</button>
+    </form>
+</div>
+

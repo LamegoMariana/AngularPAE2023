@@ -1,0 +1,30 @@
+// S09 - Acomodar los 4 elementos de nav, sidebar y footer
+
+app-sidebar {
+    position: relative;
+    top: 50%;
+    left: 10%;
+}
+
+app-home {
+    position: relative;
+    top: 50%;
+    right: 20%;
+
+    &-banner {
+        position: relative;
+        top: 50%;
+        right: 20%;
+    }
+}
+
+app-tareas {
+    position: relative;
+    right: 30%;
+}
+
+app-footer {
+    position: relative;
+    bottom: 0%;
+    left: 50%;
+}

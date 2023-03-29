@@ -1,0 +1,13 @@
+@import '/src/sass/mixins.scss';
+
+header {
+    height:150px;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/564x/9e/49/c8/9e49c8bcf79a2a306f19016643846b09.jpg');
+    @include image-centered;
+}
+
+h1, a {
+    color: #FFF;
+    text-align: center;
+}
